@@ -1,0 +1,206 @@
+{
+  "metadata": {
+    "dataset": "Virtual_Mining_Blast_ML_Dataset.xlsx",
+    "observed_records": 20,
+    "synthetic_records": 200,
+    "total_records": 220,
+    "imputer_tube_to_depth_ratio": 0.7222222222222222,
+    "feature_columns": [
+      "No_of_Holes",
+      "Depth_m",
+      "Tube_Length_m_imputed",
+      "Total_Depth_calc_m",
+      "Tube_to_Depth_Ratio",
+      "Stemming_Est_m",
+      "Holes_x_Tube"
+    ],
+    "target_column": "Oxygen_kg",
+    "observed_date_min": "2026-08-10",
+    "observed_date_max": "2026-09-25"
+  },
+  "benchmarks": {
+    "observed_only": {
+      "Linear Regression": {
+        "r2_mean": -2.526815044619909,
+        "r2_std": 6.269922613576079,
+        "mae_mean": 210.66216165979722,
+        "mae_std": 287.3117034946472,
+        "rmse_mean": 248.32305245833965,
+        "rmse_std": 319.56451685287504
+      },
+      "Ridge Regression": {
+        "r2_mean": 0.6092969366851687,
+        "r2_std": 0.26942402741100363,
+        "mae_mean": 68.52032240152573,
+        "mae_std": 38.52406297601836,
+        "rmse_mean": 95.44588367331943,
+        "rmse_std": 52.602360211731494
+      },
+      "Random Forest": {
+        "r2_mean": 0.790914612020145,
+        "r2_std": 0.15726412071576168,
+        "mae_mean": 55.334333333333326,
+        "mae_std": 22.705189075285062,
+        "rmse_mean": 78.66137129734375,
+        "rmse_std": 41.90198548808451
+      },
+      "Gradient Boosting": {
+        "r2_mean": 0.7563758370484266,
+        "r2_std": 0.1562231758339191,
+        "mae_mean": 51.00796029121562,
+        "mae_std": 23.169742951414577,
+        "rmse_mean": 82.55589169585735,
+        "rmse_std": 42.92501324876404
+      }
+    },
+    "synthetic_only": {
+      "Linear Regression": {
+        "r2_mean": 0.7955880888240875,
+        "r2_std": 0.037220270602016235,
+        "mae_mean": 62.83165692686716,
+        "mae_std": 6.860625169569554,
+        "rmse_mean": 83.26196318912237,
+        "rmse_std": 11.803173886430313
+      },
+      "Ridge Regression": {
+        "r2_mean": 0.7956007915803983,
+        "r2_std": 0.036908471892017555,
+        "mae_mean": 63.450716477241585,
+        "mae_std": 6.833892329677284,
+        "rmse_mean": 83.26613766815998,
+        "rmse_std": 11.742260122777797
+      },
+      "Random Forest": {
+        "r2_mean": 0.8515366571600367,
+        "r2_std": 0.05982395600214969,
+        "mae_mean": 46.7339210640579,
+        "mae_std": 6.743958161566208,
+        "rmse_mean": 69.04343540307944,
+        "rmse_std": 13.214387812528605
+      },
+      "Gradient Boosting": {
+        "r2_mean": 0.8389320006677906,
+        "r2_std": 0.06234455789167037,
+        "mae_mean": 48.73026184114477,
+        "mae_std": 6.530781238029948,
+        "rmse_mean": 72.17124497196993,
+        "rmse_std": 13.150425193374172
+      }
+    },
+    "all_data": {
+      "Linear Regression": {
+        "r2_mean": 0.8024973048381121,
+        "r2_std": 0.028888642040064135,
+        "mae_mean": 61.91958130110146,
+        "mae_std": 5.1094331139048625,
+        "rmse_mean": 82.13435353679294,
+        "rmse_std": 5.201623824270704
+      },
+      "Ridge Regression": {
+        "r2_mean": 0.8043940641482816,
+        "r2_std": 0.029325136865661825,
+        "mae_mean": 61.74080065924413,
+        "mae_std": 4.092261744210479,
+        "rmse_mean": 81.70291215974297,
+        "rmse_std": 4.937573816118425
+      },
+      "Random Forest": {
+        "r2_mean": 0.8635016238451321,
+        "r2_std": 0.04183399783232855,
+        "mae_mean": 44.87841284258956,
+        "mae_std": 4.093628445109519,
+        "rmse_mean": 67.45991690777878,
+        "rmse_std": 8.094555310060121
+      },
+      "Gradient Boosting": {
+        "r2_mean": 0.8610520784832932,
+        "r2_std": 0.02703127743624475,
+        "mae_mean": 46.27912685875824,
+        "mae_std": 3.902935374903288,
+        "rmse_mean": 68.65755825816746,
+        "rmse_std": 5.392678409349756
+      }
+    }
+  },
+  "domain_transfer": {
+    "Linear Regression": {
+      "trained_on": "synthetic_200",
+      "tested_on": "observed_20",
+      "r2": 0.8667763416175663,
+      "mae": 49.731497538698655,
+      "rmse": 69.40221943787023
+    },
+    "Ridge Regression": {
+      "trained_on": "synthetic_200",
+      "tested_on": "observed_20",
+      "r2": 0.8681338530760601,
+      "mae": 49.98279712621176,
+      "rmse": 69.04771955320696
+    },
+    "Random Forest": {
+      "trained_on": "synthetic_200",
+      "tested_on": "observed_20",
+      "r2": 0.9632703813479262,
+      "mae": 23.220416121330242,
+      "rmse": 36.44105075270288
+    },
+    "Gradient Boosting": {
+      "trained_on": "synthetic_200",
+      "tested_on": "observed_20",
+      "r2": 0.9673985371773927,
+      "mae": 24.64504343996429,
+      "rmse": 34.33216768550543
+    }
+  },
+  "best_model": {
+    "model_type": "Linear / Ridge Regression (Interpretable Physical Formulation)",
+    "intercept": -1602.7520633399208,
+    "coefficients": {
+      "No_of_Holes": 47.294153143754755,
+      "Depth_m": 10.250990244507763,
+      "Tube_Length_m_imputed": -14.635893070196596,
+      "Total_Depth_calc_m": 14.229314535609099,
+      "Tube_to_Depth_Ratio": 2202.4585796705624,
+      "Stemming_Est_m": 24.88688331479222,
+      "Holes_x_Tube": -19.475621906935267
+    },
+    "ridge_intercept": -34.39844348721772,
+    "ridge_coefficients": {
+      "No_of_Holes": 1.9131301948488593,
+      "Depth_m": 0.5477301071690549,
+      "Tube_Length_m_imputed": 20.078084868120115,
+      "Total_Depth_calc_m": 3.140523120014905,
+      "Tube_to_Depth_Ratio": 2.8072567928001155,
+      "Stemming_Est_m": -19.53035476095181,
+      "Holes_x_Tube": 2.8287249233961753
+    },
+    "random_forest_feature_importance": {
+      "No_of_Holes": 0.07317232333449078,
+      "Depth_m": 0.01090937293287702,
+      "Tube_Length_m_imputed": 0.00035398980619474494,
+      "Total_Depth_calc_m": 0.40219317015738276,
+      "Tube_to_Depth_Ratio": 0.011833409060932023,
+      "Stemming_Est_m": 0.006264476210212476,
+      "Holes_x_Tube": 0.4952732584979102
+    },
+    "scaler_mean": {
+      "No_of_Holes": 7.55,
+      "Depth_m": 8.375,
+      "Tube_Length_m_imputed": 5.8100000000000005,
+      "Total_Depth_calc_m": 64.225,
+      "Tube_to_Depth_Ratio": 0.6869382317029376,
+      "Stemming_Est_m": 2.565,
+      "Holes_x_Tube": 44.43
+    },
+    "scaler_scale": {
+      "No_of_Holes": 3.1060424980994705,
+      "Depth_m": 1.3026415470113026,
+      "Tube_Length_m_imputed": 1.2230699080592247,
+      "Total_Depth_calc_m": 31.369760518690605,
+      "Tube_to_Depth_Ratio": 0.0641582825055234,
+      "Stemming_Est_m": 0.40034360242171974,
+      "Holes_x_Tube": 22.718452852252067
+    },
+    "summary": "LOX blast oxygen requirement correlates primarily with Total_Depth_calc_m (No_of_Holes x Depth) and charge column tube length."
+  }
+}

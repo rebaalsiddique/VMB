@@ -1,0 +1,210 @@
+{
+  "Raw Data": [
+    [
+      "Case",
+      "Depth (m)",
+      "F.T. (m)",
+      "No. of Holes",
+      "O₂ / Oxygen (kg)",
+      "Source"
+    ],
+    [
+      "4",
+      "9",
+      "6.5",
+      "10",
+      "520",
+      "Handwritten field note/image"
+    ],
+    [
+      "5",
+      "9",
+      "6.5",
+      "13",
+      "520",
+      "Handwritten field note/image"
+    ],
+    [
+      "6",
+      "9",
+      "6.5",
+      "4",
+      "220",
+      "Handwritten field note/image"
+    ]
+  ],
+  "Research Data": [
+    [
+      "IMPORTANT: Yellow cells are assumed placeholders for research/demo purposes. Replace them with measured site data before analysis.",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Case",
+      "Data Type",
+      "Depth (m)",
+      "F.T. (m)",
+      "No. of Holes",
+      "O₂ (kg)",
+      "Rock Type",
+      "Rock Density (t/m³)",
+      "Water Condition",
+      "Weather",
+      "Wind Condition",
+      "Fragmentation Observation",
+      "Dust Observation",
+      "Ground Vibration Observation",
+      "Airblast Observation",
+      "Muckpile Observation",
+      "Notes"
+    ],
+    [
+      "4",
+      "Raw + assumed fields",
+      "9",
+      "6.5",
+      "10",
+      "520",
+      "Limestone (assumed)",
+      "2.5",
+      "Dry (assumed)",
+      "Clear (assumed)",
+      "Light wind (assumed)",
+      "Medium fragmentation (assumed)",
+      "Moderate dust (assumed)",
+      "Not measured",
+      "Not measured",
+      "Moderate pile (assumed)",
+      "Only O₂/depth/F.T./holes are from the image; other fields are assumptions."
+    ],
+    [
+      "5",
+      "Raw + assumed fields",
+      "9",
+      "6.5",
+      "13",
+      "520",
+      "Limestone (assumed)",
+      "2.5",
+      "Slightly wet (assumed)",
+      "Clear (assumed)",
+      "Light wind (assumed)",
+      "Fine-to-medium fragmentation (assumed)",
+      "Moderate dust (assumed)",
+      "Not measured",
+      "Not measured",
+      "Larger pile (assumed)",
+      "Only O₂/depth/F.T./holes are from the image; other fields are assumptions."
+    ],
+    [
+      "6",
+      "Raw + assumed fields",
+      "9",
+      "6.5",
+      "4",
+      "220",
+      "Limestone (assumed)",
+      "2.5",
+      "Dry (assumed)",
+      "Partly cloudy (assumed)",
+      "Light wind (assumed)",
+      "Coarse fragmentation (assumed)",
+      "Low-to-moderate dust (assumed)",
+      "Not measured",
+      "Not measured",
+      "Small pile (assumed)",
+      "Only O₂/depth/F.T./holes are from the image; other fields are assumptions."
+    ]
+  ],
+  "Parameter Dictionary": [
+    [
+      "Parameter",
+      "Unit",
+      "Meaning / Use"
+    ],
+    [
+      "Depth",
+      "m",
+      "Recorded depth from the field note."
+    ],
+    [
+      "F.T.",
+      "m",
+      "Field-note parameter; exact meaning should be confirmed from the site's terminology."
+    ],
+    [
+      "No. of Holes",
+      "count",
+      "Number of holes recorded for the case."
+    ],
+    [
+      "O₂ / Oxygen",
+      "kg",
+      "Oxygen quantity recorded in the field note."
+    ],
+    [
+      "Rock Type",
+      "-",
+      "Material/rock classification; values marked assumed are placeholders."
+    ],
+    [
+      "Rock Density",
+      "t/m³",
+      "Material density for analysis; assumed values must be replaced with measured data."
+    ],
+    [
+      "Water Condition",
+      "-",
+      "Dry/wet condition observed in holes or working area."
+    ],
+    [
+      "Weather",
+      "-",
+      "General weather at the time of observation."
+    ],
+    [
+      "Wind Condition",
+      "-",
+      "General wind condition; avoid using this as a safety/design calculation."
+    ],
+    [
+      "Fragmentation Observation",
+      "-",
+      "Qualitative post-event observation."
+    ],
+    [
+      "Dust Observation",
+      "-",
+      "Qualitative dust observation."
+    ],
+    [
+      "Ground Vibration Observation",
+      "-",
+      "Measured or observed result; use instrument readings when available."
+    ],
+    [
+      "Airblast Observation",
+      "-",
+      "Measured or observed result; use instrument readings when available."
+    ],
+    [
+      "Muckpile Observation",
+      "-",
+      "Qualitative post-event material/pile observation."
+    ]
+  ]
+}
